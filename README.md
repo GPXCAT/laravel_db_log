@@ -1,6 +1,6 @@
 # gpxcat's laravel_db_log
 
-Add the service provider to your `.env` file:
+Add the environment variable to your `.env` file:
 
 ```
 
