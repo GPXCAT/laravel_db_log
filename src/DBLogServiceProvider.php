@@ -3,6 +3,8 @@
 namespace Gpxcat\LaravelDbLog;
 
 use DB;
+use Illuminate\Auth\Events\Authenticated;
+use Illuminate\Support\Facades\Event;
 use Illuminate\Support\ServiceProvider;
 use Log;
 
@@ -52,7 +54,7 @@ class DBLogServiceProvider extends ServiceProvider
                 if (strpos(php_sapi_name(), 'cli') !== false) {
                     Log::info(implode(' - ', $logLine));
                 } else {
-                    view()->composer('*', function ($view) use ($logLine) {
+                    Event::listen(Authenticated::class, function () use ($logLine) {
                         Log::info(implode(' - ', $logLine));
                     });
                 }
