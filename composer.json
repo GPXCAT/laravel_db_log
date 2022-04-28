@@ -1,0 +1,7 @@
+{
+    "name": "gpxcat/laravel_db_log",
+    "description": "自製的Laravel DB 查詢 Log",
+    "require": {
+        "php": ">=7.4"
+    }
+}
