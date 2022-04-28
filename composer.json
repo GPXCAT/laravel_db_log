@@ -1,7 +1,12 @@
 {
     "name": "gpxcat/laravel_db_log",
-    "description": "自製的Laravel DB 查詢 Log",
-    "require": {
-        "php": ">=7.4"
-    }
+    "description": "製的Laravel DB 查詢 Log",
+    "type": "library",
+    "authors": [
+        {
+            "name": "John",
+            "email": "john.chang@starnic.com.tw"
+        }
+    ],
+    "require": {}
 }
