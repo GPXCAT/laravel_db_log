@@ -8,5 +8,18 @@
             "email": "john.chang@starnic.com.tw"
         }
     ],
-    "require": {}
+    "minimum-stability": "dev",
+    "require": {},
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Gpxcat\\LaravelDbLog\\DBLogServiceProvider"
+            ]
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Gpxcat\\LaravelDbLog\\": "src/"
+        }
+    }
 }
