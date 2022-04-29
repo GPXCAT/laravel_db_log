@@ -3,9 +3,8 @@
 Add the environment variable to your `.env` file:
 
 ```
-
+LOG_LEVEL=debug
 DB_LOG=1
-
 ```
 
 ### Laravel 5.5+ Integration
